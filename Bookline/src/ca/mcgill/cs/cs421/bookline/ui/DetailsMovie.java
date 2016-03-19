@@ -19,6 +19,6 @@ public class DetailsMovie extends Details
 		System.out.println("Duration           : " + aMovie.getDuration());
 		System.out.println("Description        : " + aMovie.getDescription());
 		System.out.println("Quantity available : " + aMovie.getQuantity());
-		System.out.println("Rating             : " + aMovie.getRating());
+		System.out.println("Rating             : PG-" + aMovie.getRating());
 	}
 }

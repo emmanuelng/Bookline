@@ -17,6 +17,7 @@ public class MainMenu implements Option
 		menu.addOption(new CatalogMovies());
 		menu.addOption(new CatalogMagazines());
 		menu.addOption(new ViewCart());
+		menu.addOption(new Search());
 		
 		menu.execute();
 	}

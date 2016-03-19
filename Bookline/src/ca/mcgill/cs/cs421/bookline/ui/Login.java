@@ -31,7 +31,11 @@ public class Login implements Option
 				printMessage();
 				String userInput = IOManager.readInput("Select an option (q to quit) : ");
 				
-				if (userInput.equals("q")) System.exit(0);
+				if (userInput.equals("q"))
+				{
+					IOManager.clearScreen();
+					System.exit(0);
+				}
 				
 				int option = Integer.parseInt(userInput);
 				
