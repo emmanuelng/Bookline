@@ -162,6 +162,12 @@ public class Customer
 		query = "INSERT INTO buy VALUES ("+ ponumber +",'"+ aEmail +"')";
 		if(Database.get().query(query) == null) return false;
 		
+		// empty cart
+		for (Product p : aCart.keySet())
+		{
+			aCart.remove(p);
+		}
+		
 		return true;
 	}
 }
