@@ -158,6 +158,10 @@ public class Customer
 		
 		if(Database.get().query(query) == null) return false;
 		
+		
+		query = "INSERT INTO buy VALUES ("+ ponumber +",'"+ aEmail +"')";
+		if(Database.get().query(query) == null) return false;
+		
 		return true;
 	}
 }

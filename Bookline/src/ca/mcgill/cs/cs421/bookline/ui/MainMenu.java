@@ -1,5 +1,7 @@
 package ca.mcgill.cs.cs421.bookline.ui;
 
+import ca.mcgill.cs.cs421.bookline.database.Database;
+
 public class MainMenu implements Option
 {
 	@Override
@@ -20,5 +22,6 @@ public class MainMenu implements Option
 		menu.addOption(new Search());
 		
 		menu.execute();
+		Database.get().close();
 	}
 }

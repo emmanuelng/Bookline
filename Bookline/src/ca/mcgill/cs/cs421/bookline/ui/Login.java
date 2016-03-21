@@ -2,6 +2,7 @@ package ca.mcgill.cs.cs421.bookline.ui;
 
 import java.text.ParseException;
 
+import ca.mcgill.cs.cs421.bookline.database.Database;
 import ca.mcgill.cs.cs421.bookline.shop.Customer;
 import ca.mcgill.cs.cs421.bookline.shop.ShopModel;
 
@@ -33,6 +34,7 @@ public class Login implements Option
 				
 				if (userInput.equals("q"))
 				{
+					Database.get().close();
 					IOManager.clearScreen();
 					System.exit(0);
 				}

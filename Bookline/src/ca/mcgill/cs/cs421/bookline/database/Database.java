@@ -94,4 +94,16 @@ public class Database
 			return null;
 		}
 	}
+	
+	public void close()
+	{
+		try 
+		{
+			aConnection.close();
+		} 
+		catch (SQLException e) 
+		{
+			// Nothing to do
+		}
+	}
 }
